@@ -1,0 +1,90 @@
+<!-- shortly-preview.svg
+     1200x630 dark/modern Open Graph image for Shortly
+     Save this file and serve it at https://yourdomain.com/shortly-preview.svg
+-->
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630" role="img" aria-label="Shortly — Fast &amp; Simple URL Shortener">
+  <defs>
+    <!-- Background gradient -->
+    <linearGradient id="bgGrad" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0%" stop-color="#0f0b1a"></stop>
+      <stop offset="50%" stop-color="#151229"></stop>
+      <stop offset="100%" stop-color="#201636"></stop>
+    </linearGradient>
+
+    <!-- Subtle vignette -->
+    <radialGradient id="vignette" cx="0.2" cy="0.1" r="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.02"></stop>
+      <stop offset="100%" stop-color="#000000" stop-opacity="0.35"></stop>
+    </radialGradient>
+
+    <!-- Soft glow under text -->
+    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur in="SourceAlpha" stdDeviation="10" result="blur"></feGaussianBlur>
+      <feOffset dx="0" dy="6" result="offsetBlur"></feOffset>
+      <feMerge>
+        <feMergeNode in="offsetBlur"></feMergeNode>
+        <feMergeNode in="SourceGraphic"></feMergeNode>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="630" rx="0" ry="0" fill="url(#bgGrad)"></rect>
+  <rect width="1200" height="630" rx="0" ry="0" fill="url(#vignette)" opacity="0.35"></rect>
+
+  <!-- Left decorative soft shape (adds depth) -->
+  <g transform="translate(80,60) rotate(-6)" opacity="0.07">
+    <ellipse cx="320" cy="200" rx="420" ry="160" fill="#6b3ee6"></ellipse>
+  </g>
+
+  <!-- Chain link icon group -->
+  <g id="chain" transform="translate(120,165) scale(1.25)">
+    <!-- Link 1 (left, rotated) -->
+    <path d="M64 24
+             C64 11 53 0 40 0
+             L12 0
+             C-5 0 -5 29 12 29
+             L28 29
+             C41 29 52 18 52 5" fill="none" stroke="#4F7CFF" stroke-width="18" stroke-linecap="round" stroke-linejoin="round"></path>
+
+    <!-- Link 2 (right, rotated) -->
+    <path d="M120 104
+             C120 117 109 128 96 128
+             L68 128
+             C51 128 51 99 68 99
+             L84 99
+             C97 99 108 110 108 123" fill="none" stroke="#4F7CFF" stroke-width="18" stroke-linecap="round" stroke-linejoin="round" transform="translate(-32,-60) rotate(18 80 70)"></path>
+    
+    <!-- Connector (small overlap stroke to imply interlock) -->
+    <path d="M84 44 L112 76" fill="none" stroke="#325EEB" stroke-width="6" stroke-linecap="round" opacity="0.2"></path>
+  </g>
+
+  <!-- Wordmark 'Shortly' -->
+  <g transform="translate(360,220)" filter="url(#softShadow)">
+    <text x="0" y="0" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial" font-weight="700" font-size="128" fill="#FFFFFF" letter-spacing="-1">
+      Shortly
+    </text>
+  </g>
+
+  <!-- Tagline -->
+  <g transform="translate(360,310)">
+    <text x="0" y="0" font-family="Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial" font-weight="500" font-size="44" fill="#BFC3CB" opacity="0.95">
+      Fast &amp; Simple URL Shortener
+    </text>
+  </g>
+
+  <!-- Optional subtle horizontal accent line under tagline -->
+  <g transform="translate(360,340)">
+    <rect x="0" y="12" width="420" height="2" rx="1" fill="#2A2A3A" opacity="0.35"></rect>
+  </g>
+
+  <!-- Small logo (favicon-like) at top-left for completeness -->
+  <g transform="translate(24,22) scale(0.6)">
+    <circle cx="24" cy="24" r="22" fill="#0E0B17" opacity="0.6"></circle>
+    <path d="M16 28 C16 21 21 16 28 16" stroke="#4F7CFF" stroke-width="4" stroke-linecap="round" fill="none"></path>
+    <path d="M32 36 C32 29 27 24 20 24" stroke="#6EA0FF" stroke-width="4" stroke-linecap="round" fill="none"></path>
+  </g>
+
+  <!-- Accessibility: description inside SVG for bots that parse files -->
+  <desc>Dark purple gradient Open Graph image for Shortly. Left: blue chain link icon. Center-right: "Shortly" wordmark in white and tagline "Fast &amp; Simple URL Shortener" in light grey.</desc>
+</svg>
