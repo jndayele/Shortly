@@ -1,0 +1,32 @@
+{
+  "name": "url-shortener-backend",
+  "version": "1.0.0",
+  "description": "Backend code for shortly a url shortener",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jndayele/Shortly.git"
+  },
+  "author": "Jonathan Awintiti Ndayele",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jndayele/Shortly/issues"
+  },
+  "homepage": "https://github.com/jndayele/Shortly#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "express-rate-limit": "^8.1.0",
+    "helmet": "^8.1.0",
+    "mongoose": "^8.19.0",
+    "morgan": "^1.10.1",
+    "nodemon": "^3.1.10",
+    "shortid": "^2.2.17",
+    "validator": "^13.15.15"
+  }
+}
